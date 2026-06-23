@@ -28,6 +28,7 @@ graph TD
 
     ROOT --> BLINK[01_blink]
     ROOT --> TRAFFIC[02_traffic_light]
+    ROOT --> BUTTON[03_button]
 
     BLINK --> BLINK_README[README.md]
     BLINK --> BLINK_FW[firmware]
@@ -36,6 +37,10 @@ graph TD
     TRAFFIC --> TRAFFIC_README[README.md]
     TRAFFIC --> TRAFFIC_FW[firmware]
     TRAFFIC --> TRAFFIC_HW[hardware]
+
+    BUTTON --> BUTTON_README[README.md]
+    BUTTON --> BUTTON_FW[firmware]
+    BUTTON --> BUTTON_HW[hardware]
 ```
 
 ## Projects
@@ -44,6 +49,7 @@ graph TD
 | ---------------------------------------------------- | ----------------------------------------------- |
 | [01 - Blink](./01_blink/README.md)                   | Basic GPIO output and ESP-IDF project structure |
 | [02 - Traffic Light](./02_traffic_light/README.md)   | Multiple GPIO outputs and timing control        |
+| [03 - Button](./03_button/README.md)                 | GPIO input, ISR and IRAM attr                   |
 
 ## Why This Repository Exists
 
