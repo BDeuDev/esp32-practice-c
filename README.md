@@ -30,6 +30,7 @@ graph TD
     ROOT --> TRAFFIC[02_traffic_light]
     ROOT --> BUTTON[03_button]
     ROOT --> PWM[04_pwm_led]
+    ROOT --> ADC[05_adc_potentiometer]
 
     BLINK --> BLINK_README[README.md]
     BLINK --> BLINK_FW[firmware]
@@ -46,16 +47,21 @@ graph TD
     PWM --> PWM_README[README.md]
     PWM --> PWM_FW[firmware]
     PWM --> PWM_HW[hardware]
+
+    ADC --> ADC_README[README.md]
+    ADC --> ADC_FW[firmware]
+    ADC --> ADC_HW[hardware]
 ```
 
 ## Projects
 
-| Project                                              | Concept                                         |
-| ---------------------------------------------------- | ----------------------------------------------- |
-| [01 - Blink](./01_blink/README.md)                   | Basic GPIO output and ESP-IDF project structure |
-| [02 - Traffic Light](./02_traffic_light/README.md)   | Multiple GPIO outputs and timing control        |
-| [03 - Button](./03_button/README.md)                 | GPIO input, ISR and IRAM attr                   |
-| [04 - PWM LED](./04_pwm_led/README.md)               | PWM (Pulse Width Modulation)                    |
+| Project                                                   | Concept                                         |
+| --------------------------------------------------------- | ----------------------------------------------- |
+| [01 - Blink](./01_blink/README.md)                        | Basic GPIO output and ESP-IDF project structure |
+| [02 - Traffic Light](./02_traffic_light/README.md)        | Multiple GPIO outputs and timing control        |
+| [03 - Button](./03_button/README.md)                      | GPIO input, ISR and IRAM attr                   |
+| [04 - PWM LED](./04_pwm_led/README.md)                    | PWM (Pulse Width Modulation)                    |
+| [05 - ADC Potentiometer](./05_adc_potentiometer/README.md)| ADC (Analog-to-Digital Conversion)              |
 
 ## Why This Repository Exists
 
